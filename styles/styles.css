@@ -1,29 +1,43 @@
 body {
   font-family: "Titillium Web", "Trebuchet MS", sans-serif;
   font-size: 1em;
+  color: #333333;
 }
 
 .logo img {
-  width: 200px;
+  width: 130px;
+}
+
+h1,
+h2 {
+  font-family: "Unica One", "Trebuchet MS", sans-serif;
+  font-weight: 400;
 }
 
 h1 {
-  font-family: "Unica One", "Trebuchet MS", sans-serif;
-  font-weight: 400;
   color: #0a3641;
   font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+header i {
+  color: #005c66;
+  font-size: 1.5em;
 }
 
 ul {
   list-style-type: none;
   padding: 0px;
-  margin: 0px;
 }
 
 h1,
+h2,
+h4,
 nav ul,
 .cta,
-.subcategories,
 .product__first-word {
   text-transform: uppercase;
 }
@@ -43,10 +57,14 @@ footer {
   color: #fff;
 }
 
+.socialmedia-handle {
+  display: inline;
+}
+
 /* Links */
 a {
   text-decoration: none;
-  color: #000;
+  color: #333333;
 }
 
 .cta {
