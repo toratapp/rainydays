@@ -3,13 +3,81 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rainydays</title>
-    <link href="styles/styles.css" rel="stylesheet" />
+    <meta name="description" content="But durable and comfortable raincoats from Rainydays" />
+    <title>Rainydays - Pushing the Comfort Zone</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,700;1,400;1,700&family=Unica+One&display=swap" rel="stylesheet">
+    <link href="styles/styles.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/aa39e8c744.js" crossorigin="anonymous"></script>    
   </head>
   <body>
-    <h1>HELLO FRIEND!</h1>
-    <p>Welcome to the Rainydays webshop.</p>
+    <header>
+      <a href="index.html" class="logo"><img src="images/logo.png" alt="Rainydays logo" /></a>
+      <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+      <input type="checkbox" id="hamburger-menu" />
+      <nav>
+        <ul>
+          <li><a href="woman.html">Woman</a></li>
+          <li><a href="man.html">Man</a></li>
+          <li><a href="unisex.html">Unisex</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="main-categories">
+        <div>
+          <img src="images/woman-category-image.jpg" alt="Woman in raincoat" />
+          <a href="woman.html" class="cta">Woman</a>
+        </div>
+        <div>
+          <img src="images/man-category-image.jpg" alt="Two med in raincoats" />
+          <a href="#" class="cta">Man</a>
+        </div>
+      </section>
+      <section class="subcategories">
+        <div>
+          <img src="images/activewear-man.jpg" alt="Man in raincoat skiing" />
+          <a href="#">Activewear man <span class="green-arrow-link">></span></a>
+        </div>
+        <div>
+          <img src="images/activewear-woman.jpg" alt="Woman in raincoat skiing" />
+          <a href="#">Activewear woman <span class="green-arrow-link">></span></a>
+        </div>
+        <div>
+          <img src="images/unisex-jackets.jpg" alt="Man and woman in rain jackets" />
+          <a href="#">Unisex jackets <span class="green-arrow-link">></span></a>
+        </div>
+      </section>
+      <section class="new-arrivals">
+        <div class="new-arrivals-heading">
+          <h1>New arrivals</h1>
+          <a class="green-link">Check out all new items ></a>
+        </div>
+        <div>
+          <img src="images/hovden-jacket.jpg">
+          <a href="hovden-jacket.html"><span class="product__first-word">Hovden</span> Lined jacket woman</a>
+        </div>
+      </section>
+      <section class="subscribe">
+        <p>
+          Subscribe to our newsletter. Get 10 % off your first purchase.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <section class="footer-main-section">
+        <h4>HOME</h4>
+        <ul>
+          <li><a href="woman.html">Woman</a></li>
+          <li>Man</li>
+          <li>Unisex</li>
+        </ul>
+      </section>
+      <section class="copyright">
+        <p>Copyright &copy; Rainy Days 2015-2020. All rights reserved.</p>
+      </section>
+    </footer>
   </body>
 </html>
