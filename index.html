@@ -11,10 +11,19 @@
     <script src="https://kit.fontawesome.com/aa39e8c744.js" crossorigin="anonymous"></script>    
   </head>
   <body>
+    <section class="top-section">
+      <p>Free shipping over &#36;50.00 &#47;&#47; 100 days open purchase</p>
+    </section>
     <header>
-      <a href="index.html" class="logo"><img src="images/logo.png" alt="Rainydays logo" /></a>
-      <i class="fas fa-search"></i><i class="fas fa-shopping-cart"></i><i class="fas fa-user"></i>
-      <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+      <div>
+        <a href="index.html" class="logo"><img src="images/logo.png" alt="Rainydays logo" /></a>
+      </div>
+      <div class="header__icons">
+        <i class="fas fa-search"></i>
+        <i class="fas fa-shopping-cart"></i>
+        <i class="fas fa-user"></i>
+        <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+      </div>
       <input type="checkbox" id="hamburger-menu" />
       <nav>
         <ul>
@@ -28,13 +37,13 @@
     </header>
     <main>
       <section class="main-categories">
-        <div>
-          <img src="images/woman-category-image.jpg" alt="Woman in raincoat" />
-          <a href="woman.html" class="cta">Woman</a>
+        <div class="main-categories__section">
+          <div class="main-categories__image"><img src="images/woman-category-image.jpg" alt="Woman in raincoat" /></div>
+          <a href="woman.html" class="cta main-categories__cta">Woman</a>
         </div>
-        <div>
-          <img src="images/man-category-image.jpg" alt="Two med in raincoats" />
-          <a href="#" class="cta">Man</a>
+        <div class="main-categories__section">
+          <div class="main-categories__image"><img src="images/man-category-image.jpg" alt="Two med in raincoats" /></div>
+          <a href="#" class="cta main-categories__cta">Man</a>
         </div>
       </section>
       <section class="subcategories">
