@@ -74,7 +74,8 @@ nav li {
 }
 
 h1,
-h2 {
+h2,
+nav {
   font-family: "Unica One", "Trebuchet MS", sans-serif;
   font-weight: 400;
 }
@@ -171,4 +172,20 @@ footer a {
 
 .product__first-word {
   font-weight: 700;
+}
+
+@media (min-width: 800px) {
+  header label {
+    display: none;
+  }
+
+  nav {
+    display: block;
+    position: static;
+  }
+
+  nav li {
+    display: inline-block;
+    padding: 10px 0px 10px 20px;
+  }
 }
