@@ -30,9 +30,23 @@ header {
   z-index: 100;
 }
 
+.logo img {
+  width: 130px;
+}
+
+.logo-and-icons {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  flex-direction: row;
+  align-content: space-between;
+  align-items: center;
+}
+
 .header__icons {
   display: flex;
   justify-content: space-between;
+  margin-right: 30px;
 }
 
 .fa-search,
@@ -41,9 +55,9 @@ header {
   margin: 0 8px;
 }
 
-.fa-bars {
+/*.fa-bars {
   margin-left: 8px;
-}
+}*/
 
 nav {
   display: none;
@@ -67,10 +81,6 @@ nav li {
 
 #hamburger-menu:checked ~ nav {
   display: block;
-}
-
-.logo img {
-  width: 130px;
 }
 
 h1,
