@@ -88,7 +88,8 @@ nav li {
 
 h1,
 h2,
-nav {
+nav,
+.specific-product__price {
   font-family: "Unica One", "Trebuchet MS", sans-serif;
   font-weight: 400;
 }
@@ -361,6 +362,86 @@ footer a {
 /* Specific jacket page */
 .thumbnails img {
   border: solid 1px #cccccc;
+}
+
+.thumbnails {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  flex-direction: row;
+}
+
+.thumbnails > * {
+  flex: 1;
+}
+
+.specific-product__main h1 {
+  padding: 15px;
+  display: inline;
+}
+
+.specific-product__price {
+  display: inline;
+  color: #005c66;
+  font-size: 1.7em;
+  text-align: right;
+}
+
+.product-description {
+  margin: 0px;
+  padding: 15px 15px 0px 15px;
+}
+
+.stars {
+  color: #005c66;
+  padding: 15px;
+}
+
+.size-text {
+  padding: 15px;
+}
+
+.specific-product__cta {
+  margin: 15px;
+}
+
+.stars p,
+.stars span {
+  margin: 0px 10px;
+}
+
+.stars p {
+  display: inline;
+}
+
+.chosen-color-text {
+  padding: 15px 0px 6px 15px;
+  margin: 0px;
+}
+
+.color-circles {
+  display: flex;
+  padding-left: 15px;
+  gap: 10px;
+  align-items: center;
+}
+
+.color-circle {
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+}
+
+.color-circle-active {
+  border: solid 4px #333333;
+}
+
+.color-circle-ombre-blue {
+  background-color: #6e8fa5;
+}
+
+.color-circle-antler {
+  background-color: #855851;
 }
 
 @media (min-width: 600px) {
