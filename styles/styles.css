@@ -126,7 +126,8 @@ h4,
 nav ul,
 .cta,
 .product__first-word,
-.breadcrumbs {
+.breadcrumbs,
+#subscribe-button {
   text-transform: uppercase;
 }
 
@@ -227,12 +228,15 @@ nav ul,
   margin-right: 5px;
 }
 
-.subscribe input,
+#email,
 #search {
   border-radius: 5px;
   border: solid 1px #707070;
-  padding: 7px;
   width: 220px;
+}
+
+#search {
+  padding: 7px;
 }
 
 input::placeholder {
@@ -241,10 +245,28 @@ input::placeholder {
   font-size: 0.7em;
 }
 
-.subscribe a {
-  display: block;
-  width: 100px;
+#email {
+  padding: 10px;
+}
+
+#subscribe-button {
+  background-color: #ffd000;
+  color: #333333;
+  padding: 3px 14px;
   margin: 10px auto;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #333333;
+  font-weight: 700;
+  display: block;
+  width: 120px;
+  font-size: 1.1em;
+  font-family: "Titillium Web", "Trebuchet MS", sans-serif;
+}
+
+#subscribe-button:hover {
+  text-decoration: underline;
+  background-color: #fff6cc;
 }
 
 footer {
@@ -397,14 +419,6 @@ footer a {
   padding: 15px;
 }
 
-.size-text {
-  padding: 15px;
-}
-
-.specific-product__cta {
-  margin: 15px;
-}
-
 .stars p,
 .stars span {
   margin: 0px 10px;
@@ -424,6 +438,7 @@ footer a {
   padding-left: 15px;
   gap: 10px;
   align-items: center;
+  margin-bottom: 15px;
 }
 
 .color-circle {
@@ -442,6 +457,26 @@ footer a {
 
 .color-circle-antler {
   background-color: #855851;
+}
+
+.size-select__label {
+  padding: 15px;
+}
+
+#size-select {
+  width: 140px;
+  padding: 5px;
+  font-family: "Titillium Web", "Trebuchet MS", sans-serif;
+}
+
+.specific-product__cta {
+  margin: 15px;
+  display: block;
+  width: 110px;
+}
+
+.specific-product__main .subscribe {
+  margin-top: 40px;
 }
 
 @media (min-width: 600px) {
@@ -585,11 +620,6 @@ footer a {
     padding: 50px 0px 60px 0px;
   }
 
-  .subscribe a {
-    display: inline;
-    margin-left: 8px;
-  }
-
   .subscribe p {
     display: inline;
     font-size: 1.5em;
@@ -599,12 +629,20 @@ footer a {
     font-size: 1em;
   }
 
-  .subscribe input {
+  #email {
     padding: 14px;
   }
 
   .subscribe input::placeholder {
     font-size: 1em;
+  }
+
+  #subscribe-button {
+    padding: 5px 14px;
+    margin: 0px 0px 0px 8px;
+    display: inline;
+    width: 160px;
+    font-size: 1.5em;
   }
 
   .footer-main-section {
