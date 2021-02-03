@@ -58,9 +58,17 @@
     <main>
       <section class="woman__main">
         <div class="heading-and-filter">
-            <h1>All jackets woman</h1>
-            <p>Sort by:</p>
-            <a href="#">Filter and sort</a>
+          <h1>All jackets woman</h1>
+          <div>
+            <label for="sort-by" class="sort-by__label">Sort by:</label>
+            <select name="sort" id="sort-by">
+              <option value="popularity">Popularity</option>
+              <option value="newest">Newest</option>
+              <option value="price-low">Price low to high</option>
+              <option value="prize-high">Price high to low</option>
+            </select>
+          </div>
+          <a href="#" class="filter-and-sort__button">Filter and sort</a>
         </div>
         <div class="product">
             <a href="hovden-jacket.html"><img src="images/hovden-jacket.jpg" alt="Hovden lined jacket woman"></a>
@@ -167,7 +175,7 @@
         <p>Get 10 % off your first purchase.</p>
         <div class="subscribe__input">
           <label for="email">Your email: </label>
-          <input type="email" name="email" id="email" placeholder="your-email@gmail.com">
+          <input type="email" name="email" id="email" class="subscribe-email" placeholder="your-email@gmail.com">
           <input type="submit" id="subscribe-button" value="Subscribe">
         </div>
       </section>
