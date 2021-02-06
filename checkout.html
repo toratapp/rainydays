@@ -54,7 +54,7 @@
     </header>
     <main class="checkout__main">
       <h1>Checkout</h1>
-      <form action="" method="get" class="checkout__form">
+      <form method="get" class="checkout__form">
         <div class="shipping-info">
           <h2>Shipping information</h2>
           <div>
@@ -90,6 +90,33 @@
             <input type="text" name="post-code" id="post-code">
           </div>
         </div>
+        <div class="delivery-method">
+          <h2>Delivery method</h2>
+          <div>
+            <div class="delivery-and-price">
+              <input type="radio" id="economy" name="delivery" value="economy" checked>
+              <label for="economy">Economy</label>
+              <p>&#36; 5.00</p>
+            </div>
+            <p>Shipping time: 5–8 working days</p>
+          </div>
+          <div>
+            <div class="delivery-and-price">
+              <input type="radio" id="tracked" name="delivery" value="tracked">
+              <label for="tracked">Tracked</label>
+              <p>&#36; 10.00</p>
+            </div>
+            <p>Shipping time: 3–5 working days</p>
+          </div>
+          <div>
+            <div class="delivery-and-price">
+              <input type="radio" id="express" name="delivery" value="express">
+              <label for="express">Express</label>
+              <p>&#36; 15.00</p>
+            </div>
+            <p>Shipping time: 1–2 working days</p>
+          </div>
+        </div>
         <div class="payment">
           <h2>Payment</h2>
           <div>
@@ -100,7 +127,7 @@
             <label for="exp-date">Expiration date (MM/YY) &#42;</label>
             <input type="number" name="exp-date" id="exp-date">
           </div>
-          <div>  
+          <div class="payment__cvv">  
             <label for="cvv">CVV &#42;</label>
             <input type="number" name="cvv" id="cvv">
           </div>

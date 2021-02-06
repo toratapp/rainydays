@@ -57,100 +57,139 @@
     </section>
     <main class="specific-product__main">
       <section class="key-information">
-        <img src="images/hovden-jacket.jpg" alt="Hovden lined jacket woman">
-        <div class="thumbnails">
-          <div>
-            <img src="images/hovden-jacket.jpg" alt="Hovden lined jacket">
+        <div class="key-information__images">
+          <div class="main-image">
+            <img src="images/hovden-jacket.jpg" alt="Hovden lined jacket woman">
           </div>
-          <div>
-            <img src="images/hovden-jacket-front.jpg" alt="Hovden lined jacket front">
-          </div>
-          <div>
-            <img src="images/hovden-jacket-back.jpg" alt="Hovden lined jacket back">
+          <div class="thumbnails">
+            <div>
+              <img src="images/hovden-jacket.jpg" alt="Hovden lined jacket">
+            </div>
+            <div>
+              <img src="images/hovden-jacket-front.jpg" alt="Hovden lined jacket front">
+            </div>
+            <div>
+              <img src="images/hovden-jacket-back.jpg" alt="Hovden lined jacket back">
+            </div>
           </div>
         </div>
-        <h1>Hovden jacket</h1>
-        <p class="specific-product__price">&#36;149.00</p>
-        <p class="product-description">
-          Hovden lined jacket for women is a warm and good jacket that is specially developed for snowboarding and skiing. The jacket is also well suited for everyday use and playing in the snow. The head lined jacket has practical details such as a lift card pocket and adjustment options. <span class="green-link">Read more &gt;</span>
-        </p>
-        <div class="stars">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="far fa-star"></i>
-          <p>82 reviews <span class="green-link">Read reviews &gt;</span></p>
+        <div class="key-information__text-section">
+          <h1>Hovden jacket</h1>
+          <p class="specific-product__price">&#36;149.00</p>
+          <p class="product-description">
+            Hovden lined jacket for women is a warm and good jacket that is specially developed for snowboarding and skiing. The jacket is also well suited for everyday use and playing in the snow. The head lined jacket has practical details such as a lift card pocket and adjustment options. <span class="green-link">Read more &gt;</span>
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <p>82 reviews <span class="green-link">Read reviews &gt;</span></p>
+          </div>
+          <p class="chosen-color-text">Chosen colour: Ombre blue / Storm blue</p>
+          <div class="color-circles">
+            <div class="color-circle color-circle-ombre-blue color-circle-active"></div>
+            <div class="color-circle color-circle-antler"></div>
+          </div>
+          <label for="size-select" class="size-select__label">Size:</label>
+          <select name="size" id="size-select">
+            <option value="">Pick your size</option>
+            <option value="x-small">X-small</option>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+            <option value="x-large">X-large</option>
+          </select>
+          <label for="shopping-cart"><a class="cta specific-product__cta">Add to cart</a></label>
+          <input type="checkbox" id="shopping-cart" />
+          <div class="shopping-cart-overlay">
+            <div class="shopping-cart-white-section">
+              <div class="shopping-cart__heading-and-x">
+                <h1>Shopping cart</h1>
+                <i class="fas fa-times"></i>
+              </div>
+              <div>
+                <img src="images/hovden-jacket.jpg" alt="Hovden lined jacket woman">
+              </div>
+              <div>
+                <h2>Hovden jacket</h2>
+                <p>Size: Small</p>
+                <p>&#36;149.00</p>
+                <p>Colour: Ombre blue / Storm blue</p>
+                <p>Qty&nbsp;&nbsp;<span class="green-link">-</span><span class="qty-square">1</span><span class="green-link">+</span></p>
+              </div>
+              <div class="shopping-cart__total-text">
+                <p>Total</p>
+                <p>&#36;149.00</p>
+              </div>
+              <div class="shopping-cart__shipping-text">
+                <p>Shipping <span class="italic">from </span></p>
+                <p>&#36;5.00</p>
+              </div>
+              <div class="shopping-cart__ctas">
+                <a class="cta">Checkout</a>
+                <a class="cta-level-2">Continue shopping</a>
+              </div>
+            </div>
+          </div>
         </div>
-        <p class="chosen-color-text">Chosen colour: Ombre blue / Storm blue</p>
-        <div class="color-circles">
-          <div class="color-circle color-circle-ombre-blue color-circle-active"></div>
-          <div class="color-circle color-circle-antler"></div>
-        </div>
-        <label for="size-select" class="size-select__label">Size:</label>
-        <select name="size" id="size-select">
-          <option value="">Pick your size</option>
-          <option value="x-small">X-small</option>
-          <option value="small">Small</option>
-          <option value="medium">Medium</option>
-          <option value="large">Large</option>
-          <option value="x-large">X-large</option>
-        </select>
-        <a class="cta specific-product__cta">Add to cart</a>
       </section>
-      <section class="product-information">
-        <h2>Product information</h2>
-        <p>
-          Hovden lined jacket for women is a warm and good jacket that is specially developed for snowboarding and skiing. The jacket is also well suited for everyday use and play in the snow. The head lined jacket has practical details such as a lift card pocket and adjustment options.
-        </p>
-        <p>
-          <h3>Properties</h3>
-          - Windproof<br>
-          - Strong water repellent<br>
-          - Lined with good insulation<br>
-          - Two zip pockets<br>
-          - Storm flap behind the main zipper<br>
-          - Chest pocket with zipper<br>
-          - Lift card pocket on sleeve with zipper<br>
-          - One-handed tightening at the bottom<br>
-          - Fixed hood with adjustment options<br>
-          - PolyShell ™
-        </p>
-        <p>
+      <section class="product-info-and-reviews">
+        <div class="product-information">
+          <h2>Product information</h2>
+          <p>
+            Hovden lined jacket for women is a warm and good jacket that is specially developed for snowboarding and skiing. The jacket is also well suited for everyday use and play in the snow. The head lined jacket has practical details such as a lift card pocket and adjustment options.
+          </p>
+            <h3>Properties</h3>
+          <p>
+            - Windproof<br>
+            - Strong water repellent<br>
+            - Lined with good insulation<br>
+            - Two zip pockets<br>
+            - Storm flap behind the main zipper<br>
+            - Chest pocket with zipper<br>
+            - Lift card pocket on sleeve with zipper<br>
+            - One-handed tightening at the bottom<br>
+            - Fixed hood with adjustment options<br>
+            - PolyShell ™
+          </p>
           <h3>Washing instructions</h3>
-          The jacket must be washed separately on synthetic / fine wash at up to 30 degrees. Fabric softener can cause the down to stick together in lumps, we therefore recommend not using fabric softener when washing lined jackets.
-        </p>
-      </section>
-      <section class="reviews">
-        <h2>Reviews</h2>
-        <p class="reviews__name"><strong>Christine</strong></p>
-        <div class="stars">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="far fa-star"></i>
+          <p>
+            The jacket must be washed separately on synthetic / fine wash at up to 30 degrees. Fabric softener can cause the down to stick together in lumps, we therefore recommend not using fabric softener when washing lined jackets.
+          </p>
         </div>
-        <p>I have to thank Rainydays for the wonderful service I received today. I ordered this jacket online and had it delivered to my home. But it was a little too tight for me. After I chatted with a nice lady online who recommended me to go to the nearest store to exchange.</p>
-        <p class="reviews__name"><strong>Helen</strong></p>
-        <div class="stars">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
+        <div class="reviews">
+          <h2>Reviews</h2>
+          <p class="reviews__name"><strong>Christine</strong></p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p>I have to thank Rainydays for the wonderful service I received today. I ordered this jacket online and had it delivered to my home. But it was a little too tight for me. After I chatted with a nice lady online who recommended me to go to the nearest store to exchange.</p>
+          <p class="reviews__name"><strong>Helen</strong></p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>I can recommend this jacket to anyone who may be in doubt. It is warm, good, comfortable to wear, nice shape and beautiful beautiful color! This one definitely lives up to expectations and more! Thumbs up for this nice functional jacket!</p>
+          <p class="reviews__name"><strong>Emily</strong></p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p>I liked the jacket from the first time I saw it, so decided to order. Ordered in XL, I use between L and XL, but this one I am missing 10 cm to get the zipper closed again. So here it is unfortunately a return, I liked the jacket really well, but quickly gets cold when it can not be closed.</p>
+          <a href="checkout.html" class="green-link">Read more reviews &gt;</a>
         </div>
-        <p>I can recommend this jacket to anyone who may be in doubt. It is warm, good, comfortable to wear, nice shape and beautiful beautiful color! This one definitely lives up to expectations and more! Thumbs up for this nice functional jacket!</p>
-        <p class="reviews__name"><strong>Emily</strong></p>
-        <div class="stars">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="far fa-star"></i>
-          <i class="far fa-star"></i>
-        </div>
-        <p>I liked the jacket from the first time I saw it, so decided to order. Ordered in XL, I use between L and XL, but this one I am missing 10 cm to get the zipper closed again. So here it is unfortunately a return, I liked the jacket really well, but quickly gets cold when it can not be closed.</p>
-        <a href="checkout.html" class="green-link">Read more reviews &gt;</a>
       </section>
       <section class="subscribe">
         <p>Subscribe to our newsletter.</p>
