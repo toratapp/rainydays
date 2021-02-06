@@ -57,42 +57,72 @@
       <form action="" method="get" class="checkout__form">
         <div class="shipping-info">
           <h2>Shipping information</h2>
-          <label for="first-name">First name &#42;</label>
-          <input type="text" name="first-name" id="first-name">
-          <label for="last-name">Last name &#42;</label>
-          <input type="text" name="last-name" id="last-name">
-          <label for="email">Email &#42;</label>
-          <input type="email" name="email">
-          <label for="phone-number">Phone number</label>
-          <input type="tel" name="phone-number" id="phone-number">
-          <label for="address-1">Address line 1 &#42;</label>
-          <input type="text" name="address-1" id="address-1">
-          <label for="address-2">Address line 2</label>
-          <input type="text" name="address-2" id="address-2">
-          <label for="city">City &#42;</label>
-          <input type="text" name="city" id="city">
-          <label for="post-code">Post Code &#42;</label>
-          <input type="text" name="post-code" id="post-code">
+          <div>
+            <label for="first-name">First name &#42;</label>
+            <input type="text" name="first-name" id="first-name">
+          </div>
+          <div>
+            <label for="last-name">Last name &#42;</label>
+            <input type="text" name="last-name" id="last-name">
+          </div>
+          <div>
+            <label for="email">Email &#42;</label>
+            <input type="email" name="email">
+          </div>
+          <div>
+            <label for="phone-number">Phone number</label>
+            <input type="tel" name="phone-number" id="phone-number">
+          </div>
+          <div>
+            <label for="address-1">Address line 1 &#42;</label>
+            <input type="text" name="address-1" id="address-1">
+          </div>
+          <div>
+            <label for="address-2">Address line 2</label>
+            <input type="text" name="address-2" id="address-2">
+          </div>
+          <div>
+            <label for="city">City &#42;</label>
+            <input type="text" name="city" id="city">
+          </div>
+          <div>
+            <label for="post-code">Post Code &#42;</label>
+            <input type="text" name="post-code" id="post-code">
+          </div>
         </div>
-        <div class="payment">¨
+        <div class="payment">
           <h2>Payment</h2>
-          <label for="card-number">Card Number &#42;</label>
-          <input type="number" name="card-number" id="card-number">
-          <label for="exp-date">Expiration date (MM/YY) &#42;</label>
-          <input type="number" name="exp-date" id="exp-date">
-          <label for="cvv">CVV &#42;</label>
-          <input type="number" name="cvv" id="cvv">
+          <div>
+            <label for="card-number">Card Number &#42;</label>
+            <input type="number" name="card-number" id="card-number">
+          </div>
+          <div>  
+            <label for="exp-date">Expiration date (MM/YY) &#42;</label>
+            <input type="number" name="exp-date" id="exp-date">
+          </div>
+          <div>  
+            <label for="cvv">CVV &#42;</label>
+            <input type="number" name="cvv" id="cvv">
+          </div>
         </div>
         <div class="summary">
           <h2>Summary</h2>
-          <p>1 x <span class="product__first-word">Hovden</span> Lined jacket</p>
-          <p>&#36; 149.00</p>
-          <p>Shipping</p>
-          <p>&#36; 5.00</p>
-          <p class="total-text">Total</p>
-          <p class="total-text">&#36; 154.00</p>
+          <div>
+            <p>1 x <span class="product__first-word">Hovden</span> Lined jacket</p>
+            <p>&#36; 149.00</p>
+          </div>
+          <div>
+            <p>Shipping</p>
+            <p>&#36; 5.00</p>
+          </div>
+          <div>
+            <p class="total-text">Total</p>
+            <p class="total-text">&#36; 154.00</p>
+          </div>
         </div>
-        <input type="submit" value="Buy now" id="buy-now-button">
+        <div class="checkout__submit">
+          <input type="submit" value="Buy now" id="buy-now-button">
+        </div>
       </form>
       <section class="subscribe">
         <p>Subscribe to our newsletter.</p>
