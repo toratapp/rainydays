@@ -571,7 +571,9 @@ footer a {
   z-index: 1200;
 }
 
-#shopping-cart {
+#shopping-cart,
+#close,
+#close:checked ~ .shopping-cart-overlay {
   display: none;
 }
 
