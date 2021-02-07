@@ -25,6 +25,10 @@
   padding: 0px;
 }
 
+.subcategories h2:hover {
+  text-decoration: underline;
+}
+
 .new-arrivals h2 {
   margin-bottom: 0px;
 }

@@ -110,6 +110,10 @@
     max-width: 160px;
   }
 
+  .shopping-cart-and-my-account p:hover {
+    text-decoration: underline;
+  }
+
   .shopping-cart-desktop,
   .my-account-desktop {
     font-size: 0.7em;
