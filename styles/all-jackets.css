@@ -1,9 +1,13 @@
+.woman__main {
+  padding: 15px;
+}
+
 .heading-and-filter {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0px;
-  margin: 0px;
+  margin: 0px 0px 15px 0px;
 }
 
 .heading-and-filter label,
@@ -16,6 +20,7 @@
   background-color: #0a3641;
   border-radius: 5px;
   padding: 5px 10px;
+  display: inline-block;
 }
 
 .more-pages {

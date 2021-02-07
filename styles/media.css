@@ -266,6 +266,10 @@
     display: none;
   }
 
+  .heading-and-filter a {
+    display: none;
+  }
+
   .specific-product__cta {
     width: 140px;
     margin: 20px 0px;
