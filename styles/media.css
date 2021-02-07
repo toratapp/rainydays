@@ -142,19 +142,19 @@
     position: relative;
   }
 
-  .nav-dot-1 {
+  nav li:before {
     content: "";
     padding: 3px;
-    background-color: rgba(10, 54, 65, 0.2);
+    background-color: rgba(10, 54, 65, 0);
     border-radius: 50%;
     position: absolute;
     top: 16px;
-    left: 1px;
+    left: 2px;
     transition-property: background-color;
-    transition-duration: 0.5s;
+    transition-duration: 0.3s;
   }
 
-  .nav-link-1:hover ~ .nav-dot-1 {
+  nav li:hover:before {
     background-color: rgba(10, 54, 65, 1);
   }
 
@@ -376,6 +376,11 @@
 
   nav {
     font-size: 1.4em;
+  }
+
+  nav li:before {
+    top: 21px;
+    left: 1px;
   }
 
   .main-categories {
