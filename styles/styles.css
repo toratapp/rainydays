@@ -156,7 +156,8 @@ nav ul,
 .specific-product__main img,
 .shopping-cart-overlay img,
 .checkout-success__main img,
-.about__main img {
+.about__main img,
+.contact__main img {
   width: 100%;
 }
 
@@ -174,7 +175,8 @@ nav ul,
 .checkout__form,
 .checkout__main h1,
 .checkout-success__wrapper,
-.about__text-and-image {
+.about__text-and-image,
+.contact__text-and-image {
   max-width: 1300px;
 }
 
@@ -845,6 +847,56 @@ input[type="number"] {
   padding: 0px;
 }
 
+/* Contact page */
+.contact__main {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.contact__text {
+  padding: 15px;
+}
+
+.contact__image {
+  width: 100%;
+  height: auto;
+  margin-bottom: -6px;
+  padding: 0px;
+}
+
+.contact__main i,
+.contact__main h2 {
+  color: #005c66;
+}
+
+.contact__main i {
+  font-size: 1.7em;
+}
+
+.contact__main h2,
+.contact__text-and-image p {
+  margin: 5px 0px;
+}
+
+.contact__text-and-image p {
+  font-size: 0.8em;
+}
+
+.contact__main h2 {
+  display: inline-block;
+  margin-left: 12px;
+}
+
+.contact__mail,
+.contact__tel {
+  margin-top: 25px;
+}
+
+.contact__tel {
+  margin-bottom: 15px;
+}
+
 @media (min-width: 600px) {
   .main-categories,
   .subcategories {
@@ -1056,7 +1108,8 @@ input[type="number"] {
   .checkout-success__intro p,
   .checkout-success__product-info p,
   .checkout-success__summary p,
-  .about__text p {
+  .about__text p,
+  .contact__text-and-image p {
     font-size: 1em;
   }
 
@@ -1153,17 +1206,20 @@ input[type="number"] {
     width: 104px;
   }
 
-  .about__text-and-image {
+  .about__text-and-image,
+  .contact__text-and-image {
     display: flex;
     gap: 20px;
     align-items: center;
   }
 
-  .about__text-and-image > * {
+  .about__text-and-image > *,
+  .contact__text-and-image > * {
     flex: 1;
   }
 
-  .about__image {
+  .about__image,
+  .contact__image {
     padding: 15px;
     margin: 0px;
   }
@@ -1328,8 +1384,43 @@ input[type="number"] {
     margin-top: 0px;
   }
 
-  .about__text-and-image {
+  .about__text-and-image,
+  .contact__text-and-image {
     margin: 0px auto 30px auto;
     align-items: start;
+  }
+
+  .mail-and-tel {
+    display: flex;
+    gap: 80px;
+  }
+
+  .mail-and-tel > * {
+    flex: 1;
+  }
+
+  .contact__main i {
+    font-size: 2.4em;
+  }
+
+  .contact__main h2 {
+    display: block;
+    margin-left: 0px;
+  }
+
+  .contact__main h2,
+  .contact__text-and-image p {
+    margin: 15px 0px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .mail-and-tel {
+    gap: 150px;
+    margin-top: 30px;
+  }
+
+  .contact__text-and-image {
+    gap: 50px;
   }
 }
