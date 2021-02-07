@@ -1,0 +1,94 @@
+.checkout__main h1,
+.shipping-info,
+.delivery-method,
+.payment,
+.summary {
+  padding: 15px;
+}
+
+.checkout__main,
+.delivery-method,
+.payment,
+.summary {
+  margin-top: 20px;
+}
+
+.checkout__main h2 {
+  margin: 7px 0px;
+}
+
+.shipping-info input,
+.payment input,
+.summary input,
+.checkout__main label {
+  padding: 10px 0px;
+}
+
+.shipping-info,
+.payment,
+.summary,
+.shipping-info div,
+.payment div {
+  display: flex;
+  flex-direction: column;
+}
+
+.shipping-info > *,
+.payment > * {
+  flex: 1;
+}
+
+.delivery-method p {
+  margin: 0;
+}
+
+.delivery-method label {
+  font-weight: 700;
+}
+
+.delivery-and-price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.summary div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.summary p {
+  margin: 10px 0px;
+}
+
+.checkout__submit {
+  padding-left: 15px;
+  margin-bottom: 50px;
+}
+
+#buy-now-button {
+  width: 76px;
+}
+
+.shipping-info {
+  grid-area: shipping-info;
+}
+.delivery-method {
+  grid-area: delivery;
+}
+.payment {
+  grid-area: payment;
+}
+.summary {
+  grid-area: summary;
+}

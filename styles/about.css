@@ -1,0 +1,15 @@
+.about__main {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.about__text {
+  padding: 15px;
+}
+
+.about__image {
+  height: auto;
+  margin-bottom: -6px;
+  padding: 0px;
+}

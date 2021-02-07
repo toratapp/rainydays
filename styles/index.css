@@ -1,0 +1,45 @@
+.main-categories__section {
+  position: relative;
+  z-index: 1;
+}
+
+.main-categories__section {
+  margin-bottom: 7px;
+}
+
+.main-categories__cta {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  text-align: center;
+}
+
+.subcategories,
+.new-arrivals {
+  margin: 30px 0px;
+}
+
+.subcategories h2,
+.new-arrivals h2 {
+  margin-top: 0px;
+  padding: 0px;
+}
+
+.new-arrivals h2 {
+  margin-bottom: 0px;
+}
+
+.subcategories div,
+.new-arrivals div,
+.woman__main div {
+  padding: 15px 15px 0px 15px;
+}
+
+.new-arrivals-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  margin-bottom: 0px;
+  padding: 0px;
+}

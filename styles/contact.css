@@ -1,0 +1,43 @@
+.contact__main {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.contact__text {
+  padding: 15px;
+}
+
+.contact__image {
+  height: auto;
+  margin-bottom: -6px;
+  padding: 0px;
+}
+
+.contact__main i,
+.contact__main h2 {
+  color: #005c66;
+}
+
+.contact__main i {
+  font-size: 1.7em;
+}
+
+.contact__main h2,
+.contact__text-and-image p {
+  margin: 5px 0px;
+}
+
+.contact__main h2 {
+  display: inline-block;
+  margin-left: 12px;
+}
+
+.contact__mail,
+.contact__tel {
+  margin-top: 25px;
+}
+
+.contact__tel {
+  margin-bottom: 15px;
+}
