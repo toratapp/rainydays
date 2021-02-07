@@ -139,6 +139,23 @@
   nav li {
     display: inline-block;
     padding: 10px 30px 0px 10px;
+    position: relative;
+  }
+
+  .nav-dot-1 {
+    content: "";
+    padding: 3px;
+    background-color: rgba(10, 54, 65, 0.2);
+    border-radius: 50%;
+    position: absolute;
+    top: 16px;
+    left: 1px;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+  }
+
+  .nav-link-1:hover ~ .nav-dot-1 {
+    background-color: rgba(10, 54, 65, 1);
   }
 
   nav ul {
@@ -256,7 +273,7 @@
 
   .product-info-and-reviews {
     display: flex;
-    gap: 20px;
+    gap: 40px;
     margin: auto;
   }
 
@@ -422,6 +439,10 @@
 
   .thumbnails {
     max-height: 340px;
+  }
+
+  .product-info-and-reviews {
+    gap: 130px;
   }
 
   .shopping-cart-white-section {
