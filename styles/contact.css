@@ -15,7 +15,8 @@
 }
 
 .contact__main i,
-.contact__main h2 {
+.contact__mail h2,
+.contact__tel h2 {
   color: #005c66;
 }
 
