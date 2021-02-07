@@ -15,9 +15,9 @@
 }
 
 .contact__main i,
-.contact__mail h2,
-.contact__tel h2 {
-  color: #005c66 !important;
+#contact__mail-address,
+#contact__tel-number {
+  color: #005c66;
 }
 
 .contact__main i {
