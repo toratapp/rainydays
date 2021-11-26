@@ -3,14 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="This is the checkout page where you input all of your shipping and payment information." />
+    <meta
+      name="description"
+      content="This is the checkout page where you input all of your shipping and payment information."
+    />
     <title>Checkout - Rainydays</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,700;1,400;1,700&family=Unica+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,700;1,400;1,700&family=Unica+One&display=swap"
+      rel="stylesheet"
+    />
     <link href="styles/styles.css" rel="stylesheet" />
     <link href="styles/checkout.css" rel="stylesheet" />
     <link href="styles/media.css" rel="stylesheet" />
-    <script src="https://kit.fontawesome.com/aa39e8c744.js" crossorigin="anonymous"></script>    
+    <script
+      src="https://kit.fontawesome.com/aa39e8c744.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Hotjar Tracking Code for My site -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2721989, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
   </head>
   <body>
     <section class="top-section">
@@ -19,7 +44,9 @@
     <header>
       <section class="logo-and-icons">
         <div>
-          <a href="index.html" class="logo"><img src="images/logo.png" alt="Rainydays logo" /></a>
+          <a href="index.html" class="logo"
+            ><img src="images/logo.png" alt="Rainydays logo"
+          /></a>
         </div>
         <div class="header__icons">
           <i class="fas fa-search"></i>
@@ -27,7 +54,12 @@
           <i class="fas fa-user"></i>
         </div>
         <div class="search-field-wider-screens">
-          <input type="text" name="search" id="search" placeholder="Type text here">
+          <input
+            type="text"
+            name="search"
+            id="search"
+            placeholder="Type text here"
+          />
           <label for="search" class="search-label">Search</label>
           <i class="fas fa-search"></i>
         </div>
@@ -61,42 +93,48 @@
           <h2>Shipping information</h2>
           <div>
             <label for="first-name">First name &#42;</label>
-            <input type="text" name="first-name" id="first-name" required>
+            <input type="text" name="first-name" id="first-name" required />
           </div>
           <div>
             <label for="last-name">Last name &#42;</label>
-            <input type="text" name="last-name" id="last-name" required>
+            <input type="text" name="last-name" id="last-name" required />
           </div>
           <div>
             <label for="email">Email &#42;</label>
-            <input type="email" name="email" required>
+            <input type="email" name="email" required />
           </div>
           <div>
             <label for="phone-number">Phone number</label>
-            <input type="tel" name="phone-number" id="phone-number">
+            <input type="tel" name="phone-number" id="phone-number" />
           </div>
           <div>
             <label for="address-1">Address line 1 &#42;</label>
-            <input type="text" name="address-1" id="address-1" required>
+            <input type="text" name="address-1" id="address-1" required />
           </div>
           <div>
             <label for="address-2">Address line 2</label>
-            <input type="text" name="address-2" id="address-2">
+            <input type="text" name="address-2" id="address-2" />
           </div>
           <div>
             <label for="city">City &#42;</label>
-            <input type="text" name="city" id="city" required>
+            <input type="text" name="city" id="city" required />
           </div>
           <div>
             <label for="post-code">Post Code &#42;</label>
-            <input type="text" name="post-code" id="post-code" required>
+            <input type="text" name="post-code" id="post-code" required />
           </div>
         </div>
         <div class="delivery-method">
           <h2>Delivery method</h2>
           <div>
             <div class="delivery-and-price">
-              <input type="radio" id="economy" name="delivery" value="economy" checked>
+              <input
+                type="radio"
+                id="economy"
+                name="delivery"
+                value="economy"
+                checked
+              />
               <label for="economy">Economy</label>
               <p>&#36; 5.00</p>
             </div>
@@ -104,7 +142,12 @@
           </div>
           <div>
             <div class="delivery-and-price">
-              <input type="radio" id="tracked" name="delivery" value="tracked">
+              <input
+                type="radio"
+                id="tracked"
+                name="delivery"
+                value="tracked"
+              />
               <label for="tracked">Tracked</label>
               <p>&#36; 10.00</p>
             </div>
@@ -112,7 +155,12 @@
           </div>
           <div>
             <div class="delivery-and-price">
-              <input type="radio" id="express" name="delivery" value="express">
+              <input
+                type="radio"
+                id="express"
+                name="delivery"
+                value="express"
+              />
               <label for="express">Express</label>
               <p>&#36; 15.00</p>
             </div>
@@ -123,21 +171,23 @@
           <h2>Payment</h2>
           <div>
             <label for="card-number">Card Number &#42;</label>
-            <input type="number" name="card-number" id="card-number" required>
+            <input type="number" name="card-number" id="card-number" required />
           </div>
-          <div>  
+          <div>
             <label for="exp-date">Expiration date (MM/YY) &#42;</label>
-            <input type="number" name="exp-date" id="exp-date" required>
+            <input type="number" name="exp-date" id="exp-date" required />
           </div>
-          <div class="payment__cvv">  
+          <div class="payment__cvv">
             <label for="cvv">CVV &#42;</label>
-            <input type="number" name="cvv" id="cvv" required>
+            <input type="number" name="cvv" id="cvv" required />
           </div>
         </div>
         <div class="summary">
           <h2>Summary</h2>
           <div>
-            <p>1 x <span class="product__first-word">Hovden</span> Lined jacket</p>
+            <p>
+              1 x <span class="product__first-word">Hovden</span> Lined jacket
+            </p>
             <p>&#36; 149.00</p>
           </div>
           <div>
@@ -158,8 +208,14 @@
         <p>Get 10 % off your first purchase.</p>
         <div class="subscribe__input">
           <label for="email">Your email: </label>
-          <input type="email" name="email" id="email" class="subscribe-email" placeholder="your-email@gmail.com">
-          <input type="submit" id="subscribe-button" value="Subscribe">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="subscribe-email"
+            placeholder="your-email@gmail.com"
+          />
+          <input type="submit" id="subscribe-button" value="Subscribe" />
         </div>
       </section>
     </main>
@@ -193,8 +249,10 @@
         </div>
         <div>
           <h4>Social media</h4>
-          <p>Keep up with our new releases on</p><p>Facebook and Instagram</p>
-          <i class="fab fa-facebook-square"></i><i class="fab fa-instagram"></i><p class="socialmedia-handle">@rainydays</p>
+          <p>Keep up with our new releases on</p>
+          <p>Facebook and Instagram</p>
+          <i class="fab fa-facebook-square"></i><i class="fab fa-instagram"></i>
+          <p class="socialmedia-handle">@rainydays</p>
         </div>
       </section>
       <section class="copyright">
