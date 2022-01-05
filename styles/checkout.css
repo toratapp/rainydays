@@ -26,9 +26,7 @@
 
 .shipping-info,
 .payment,
-.summary,
-.shipping-info div,
-.payment div {
+.summary {
   display: flex;
   flex-direction: column;
 }
@@ -36,6 +34,20 @@
 .shipping-info > *,
 .payment > * {
   flex: 1;
+}
+
+.shipping-info input,
+.payment input {
+  display: block;
+  margin-top: 0px;
+  width: 100%;
+}
+
+.shipping-info label,
+.payment label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 0px;
 }
 
 .delivery-method p {
@@ -94,7 +106,7 @@ input[type="number"] {
   grid-area: summary;
 }
 .form__errormessage {
-  /* display: none; */
+  display: none;
   color: darkred;
   font-size: 0.9em;
   margin-top: 5px;

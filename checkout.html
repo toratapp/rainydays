@@ -8,6 +8,7 @@
       content="This is the checkout page where you input all of your shipping and payment information."
     />
     <title>Checkout - Rainydays</title>
+    <link rel="icon" href="#" type="image/icon" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,700;1,400;1,700&family=Unica+One&display=swap"
@@ -88,7 +89,7 @@
     </header>
     <main class="checkout__main">
       <h1>Checkout</h1>
-      <form action="checkout-success.html" method="get" class="checkout__form">
+      <form method="get" class="checkout__form">
         <div class="shipping-info">
           <h2>Shipping information</h2>
           <div>
@@ -107,7 +108,10 @@
           </div>
           <div>
             <label for="email">Email &#42;</label>
-            <input type="email" name="email" />
+            <input type="email" name="email" id="shippingEmail" />
+            <div class="form__errormessage" id="emailError">
+              Must be a valid email address
+            </div>
           </div>
           <div>
             <label for="phone-number">Phone number</label>
@@ -116,6 +120,9 @@
           <div>
             <label for="address-1">Address line 1 &#42;</label>
             <input type="text" name="address-1" id="address-1" />
+            <div class="form__errormessage" id="addressError">
+              Must contain at least 8 characters
+            </div>
           </div>
           <div>
             <label for="address-2">Address line 2</label>
@@ -124,10 +131,16 @@
           <div>
             <label for="city">City &#42;</label>
             <input type="text" name="city" id="city" />
+            <div class="form__errormessage" id="cityError">
+              This field must be filled out
+            </div>
           </div>
           <div>
             <label for="post-code">Post Code &#42;</label>
             <input type="text" name="post-code" id="post-code" />
+            <div class="form__errormessage" id="postCodeError">
+              This field must be filled out
+            </div>
           </div>
         </div>
         <div class="delivery-method">
@@ -178,14 +191,23 @@
           <div>
             <label for="card-number">Card Number &#42;</label>
             <input type="number" name="card-number" id="card-number" />
+            <div class="form__errormessage" id="cardError">
+              This field must be filled out
+            </div>
           </div>
           <div>
             <label for="exp-date">Expiration date (MM/YY) &#42;</label>
             <input type="number" name="exp-date" id="exp-date" />
+            <div class="form__errormessage" id="expError">
+              This field must be filled out
+            </div>
           </div>
           <div class="payment__cvv">
             <label for="cvv">CVV &#42;</label>
             <input type="number" name="cvv" id="cvv" />
+            <div class="form__errormessage" id="cvvError">
+              This field must be filled out
+            </div>
           </div>
         </div>
         <div class="summary">
@@ -263,5 +285,6 @@
         <p>Copyright &copy; Rainydays 2015-2021. All rights reserved.</p>
       </section>
     </footer>
+    <script src="js/checkout.js"></script>
   </body>
 </html>

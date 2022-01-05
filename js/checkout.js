@@ -1,38 +1,68 @@
 const form = document.querySelector("form");
-const contactName = document.querySelector("#name");
-const nameError = document.querySelector("#nameError");
-const contactSubject = document.querySelector("#subject");
-const subjectError = document.querySelector("#subjectError");
-const contactEmail = document.querySelector("#email");
+const firstName = document.querySelector("#first-name");
+const firstNameError = document.querySelector("#firstNameError");
+const lastName = document.querySelector("#last-name");
+const lastNameError = document.querySelector("#lastNameError");
+const shippingEmail = document.querySelector("#shippingEmail");
 const emailError = document.querySelector("#emailError");
-const contactAddress = document.querySelector("#address");
+const shippingAddress = document.querySelector("#address-1");
 const addressError = document.querySelector("#addressError");
+const city = document.querySelector("#city");
+const cityError = document.querySelector("#cityError");
+const postCode = document.querySelector("#post-code");
+const postCodeError = document.querySelector("#postCodeError");
 
 function validateForm(event) {
     event.preventDefault();
 
-    if(checkLength(contactName.value, 0)) {
-        nameError.style.display = "none";
+    let validationPassed = true;
+
+    if(checkLength(firstName.value, 0)) {
+        firstNameError.style.display = "none";
     } else {
-        nameError.style.display = "block";
+        firstNameError.style.display = "block";
+        validationPassed = false;
     }
 
-    if(checkLength(contactSubject.value, 9)) {
-        subjectError.style.display = "none";
+    if(checkLength(lastName.value, 0)) {
+        lastNameError.style.display = "none";
     } else {
-        subjectError.style.display = "block";
+        lastNameError.style.display = "block";
+        validationPassed = false;
     }
 
-    if(validateEmail(contactEmail.value)) {
+    if(validateEmail(shippingEmail.value)) {
         emailError.style.display = "none";
     } else {
         emailError.style.display = "block";
+        validationPassed = false;
     }
 
-    if(checkLength(contactAddress.value, 24)) {
+    if(checkLength(shippingAddress.value, 7)) {
         addressError.style.display = "none";
     } else {
         addressError.style.display = "block";
+        validationPassed = false;
+    }
+
+    if(checkLength(city.value, 0)) {
+        cityError.style.display = "none";
+    } else {
+        cityError.style.display = "block";
+        validationPassed = false;
+    }
+
+    if(checkLength(postCode.value, 0)) {
+        postCodeError.style.display = "none";
+    } else {
+        postCodeError.style.display = "block";
+        validationPassed = false;
+    }
+
+    if (validationPassed) {
+        form.action = "checkout-success.html";
+    } else {
+        form.action = "";
     }
 }
 
