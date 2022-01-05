@@ -77,7 +77,8 @@ input[type="number"] {
 }
 
 #buy-now-button {
-  width: 80px;
+  width: 118px;
+  margin-left: 15px;
 }
 
 .shipping-info {
@@ -91,4 +92,10 @@ input[type="number"] {
 }
 .summary {
   grid-area: summary;
+}
+.form__errormessage {
+  /* display: none; */
+  color: darkred;
+  font-size: 0.9em;
+  margin-top: 5px;
 }

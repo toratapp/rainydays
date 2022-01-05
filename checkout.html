@@ -88,20 +88,26 @@
     </header>
     <main class="checkout__main">
       <h1>Checkout</h1>
-      <form method="get" class="checkout__form">
+      <form action="checkout-success.html" method="get" class="checkout__form">
         <div class="shipping-info">
           <h2>Shipping information</h2>
           <div>
             <label for="first-name">First name &#42;</label>
-            <input type="text" name="first-name" id="first-name" required />
+            <input type="text" name="first-name" id="first-name" />
+            <div class="form__errormessage" id="firstNameError">
+              This field must be filled out
+            </div>
           </div>
           <div>
             <label for="last-name">Last name &#42;</label>
-            <input type="text" name="last-name" id="last-name" required />
+            <input type="text" name="last-name" id="last-name" />
+            <div class="form__errormessage" id="lastNameError">
+              This field must be filled out
+            </div>
           </div>
           <div>
             <label for="email">Email &#42;</label>
-            <input type="email" name="email" required />
+            <input type="email" name="email" />
           </div>
           <div>
             <label for="phone-number">Phone number</label>
@@ -109,7 +115,7 @@
           </div>
           <div>
             <label for="address-1">Address line 1 &#42;</label>
-            <input type="text" name="address-1" id="address-1" required />
+            <input type="text" name="address-1" id="address-1" />
           </div>
           <div>
             <label for="address-2">Address line 2</label>
@@ -117,11 +123,11 @@
           </div>
           <div>
             <label for="city">City &#42;</label>
-            <input type="text" name="city" id="city" required />
+            <input type="text" name="city" id="city" />
           </div>
           <div>
             <label for="post-code">Post Code &#42;</label>
-            <input type="text" name="post-code" id="post-code" required />
+            <input type="text" name="post-code" id="post-code" />
           </div>
         </div>
         <div class="delivery-method">
@@ -171,15 +177,15 @@
           <h2>Payment</h2>
           <div>
             <label for="card-number">Card Number &#42;</label>
-            <input type="number" name="card-number" id="card-number" required />
+            <input type="number" name="card-number" id="card-number" />
           </div>
           <div>
             <label for="exp-date">Expiration date (MM/YY) &#42;</label>
-            <input type="number" name="exp-date" id="exp-date" required />
+            <input type="number" name="exp-date" id="exp-date" />
           </div>
           <div class="payment__cvv">
             <label for="cvv">CVV &#42;</label>
-            <input type="number" name="cvv" id="cvv" required />
+            <input type="number" name="cvv" id="cvv" />
           </div>
         </div>
         <div class="summary">
@@ -199,9 +205,7 @@
             <p class="total-text">&#36; 154.00</p>
           </div>
         </div>
-        <div class="checkout__submit">
-          <a href="checkout-success.html" id="buy-now-button">Buy now</a>
-        </div>
+        <button class="checkout__submit" id="buy-now-button">Buy now</button>
       </form>
       <section class="subscribe">
         <p>Subscribe to our newsletter.</p>
