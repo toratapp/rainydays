@@ -65,6 +65,27 @@ function validateForm(event) {
         validationPassed = false;
     }
 
+    if(checkLength(cardNumber.value, 0)) {
+        cardError.style.display = "none";
+    } else {
+        cardError.style.display = "block";
+        validationPassed = false;
+    }
+
+    if(checkLength(expDate.value, 4)) {
+        expError.style.display = "none";
+    } else {
+        expError.style.display = "block";
+        validationPassed = false;
+    }
+
+    if(checkLength(cvv.value, 0)) {
+        cvvError.style.display = "none";
+    } else {
+        cvvError.style.display = "block";
+        validationPassed = false;
+    }
+
     if (validationPassed) {
         form.action = "checkout-success.html";
     } else {

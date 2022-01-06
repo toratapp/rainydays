@@ -228,3 +228,7 @@
 .shopping-cart__ctas {
   grid-area: ctas;
 }
+
+.read-reviews {
+  margin-left: 8px;
+}
