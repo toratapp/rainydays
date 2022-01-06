@@ -11,6 +11,12 @@ const city = document.querySelector("#city");
 const cityError = document.querySelector("#cityError");
 const postCode = document.querySelector("#post-code");
 const postCodeError = document.querySelector("#postCodeError");
+const cardNumber = document.querySelector("#card-number");
+const cardError = document.querySelector("#cardError");
+const expDate = document.querySelector("#exp-date");
+const expError = document.querySelector("#expError");
+const cvv = document.querySelector("#cvv");
+const cvvError = document.querySelector("#cvvError");
 
 function validateForm(event) {
     event.preventDefault();

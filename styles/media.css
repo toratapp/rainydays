@@ -235,6 +235,10 @@
     font-size: 1em;
   }
 
+  #cvv {
+    width: 48%;
+  }
+
   .subscribe-email {
     padding: 12px;
     width: 331px;

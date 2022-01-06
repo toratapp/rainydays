@@ -43,6 +43,10 @@
   width: 100%;
 }
 
+#cvv {
+  width: 100%;
+}
+
 .shipping-info label,
 .payment label {
   display: block;
