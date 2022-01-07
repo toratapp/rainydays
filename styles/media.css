@@ -256,9 +256,34 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
+  .heading-and-filter {
+    display: block;
+    position: relative;
+  }
+
+  .filter-and-sort-desktop {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0px 0px;
+  }
+
   .heading-and-filter label,
   .heading-and-filter select {
     display: inline;
+  }
+
+  #filter-button-desktop {
+    color: #fff;
+    background-color: #0a3641;
+    border-radius: 5px;
+    padding: 5px 10px;
+    display: inline-block;
+  }
+
+  .sort-by-select {
+    margin-left: 30px;
+    padding: 0px 0px !important;
   }
 
   .heading-and-filter label {

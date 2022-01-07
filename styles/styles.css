@@ -31,6 +31,18 @@ h3 {
   font-size: 1em;
 }
 
+.inline {
+  display: inline;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
 select,
 input {
   font-family: "Titillium Web", "Trebuchet MS", sans-serif;
