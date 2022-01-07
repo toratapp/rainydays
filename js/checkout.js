@@ -13,7 +13,8 @@ const postCode = document.querySelector("#post-code");
 const postCodeError = document.querySelector("#postCodeError");
 const cardNumber = document.querySelector("#card-number");
 const cardError = document.querySelector("#cardError");
-const expDate = document.querySelector("#exp-date");
+const expMonth = document.querySelector("#exp-month");
+const expYear = document.querySelector("#exp-year");
 const expError = document.querySelector("#expError");
 const cvv = document.querySelector("#cvv");
 const cvvError = document.querySelector("#cvvError");
@@ -72,7 +73,7 @@ function validateForm(event) {
         validationPassed = false;
     }
 
-    if(checkLength(expDate.value, 4)) {
+    if(checkLength(expMonth.value, 0) && checkLength(expYear.value, 0)) {
         expError.style.display = "none";
     } else {
         expError.style.display = "block";
@@ -87,9 +88,7 @@ function validateForm(event) {
     }
 
     if (validationPassed) {
-        form.action = "checkout-success.html";
-    } else {
-        form.action = "";
+        form.submit();
     }
 }
 
