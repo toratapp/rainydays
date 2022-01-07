@@ -15,8 +15,11 @@
 }
 
 .contact__main i,
-#contact__mail-address,
 #contact__tel-number {
+  color: #005c66 !important;
+}
+
+.bluelink {
   color: #005c66 !important;
 }
 
