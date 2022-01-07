@@ -43,6 +43,11 @@
   width: 100%;
 }
 
+.payment select {
+  font-size: 1.1em;
+  color: #333333;
+}
+
 #cvv {
   width: 100%;
 }
