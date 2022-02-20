@@ -20,15 +20,14 @@
     margin: 15px 0px;
   }
 
-  .new-arrivals,
-  .woman__main {
+  .new-arrivals-container,
+  .all-jackets-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
   }
 
-  .new-arrivals-heading,
-  .heading-and-filter {
+  .new-arrivals-heading {
     grid-column: -1/1;
   }
 
@@ -187,8 +186,8 @@
     margin: 30px 0px;
   }
 
-  .new-arrivals,
-  .woman__main {
+  .new-arrivals-container,
+  .all-jackets-container {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
@@ -257,15 +256,7 @@
   }
 
   .heading-and-filter {
-    display: block;
-    position: relative;
-  }
-
-  .filter-and-sort-desktop {
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 0px 0px;
+    display: flex;
   }
 
   .heading-and-filter label,
@@ -460,8 +451,10 @@
   }
 
   .subcategories div,
-  .new-arrivals div,
-  .woman__main div {
+  .new-arrivals-heading,
+  .new-arrivals-container,
+  .heading-and-filter,
+  .all-jackets-container {
     padding: 0px 15px;
   }
 

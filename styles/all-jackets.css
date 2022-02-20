@@ -1,4 +1,5 @@
-.woman__main {
+.heading-and-filter,
+.all-jackets-container {
   padding: 15px;
 }
 
@@ -6,7 +7,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px;
   margin: 0px 0px 15px 0px;
 }
 

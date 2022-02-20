@@ -34,7 +34,8 @@
 }
 
 .subcategories div,
-.new-arrivals div,
+.new-arrivals-heading,
+.new-arrivals-container,
 .woman__main div {
   padding: 15px 15px 0px 15px;
 }
@@ -45,5 +46,4 @@
   justify-content: space-between;
   flex: 1;
   margin-bottom: 0px;
-  padding: 0px;
 }

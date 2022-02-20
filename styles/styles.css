@@ -31,6 +31,10 @@ h3 {
   font-size: 1em;
 }
 
+.strong {
+  font-weight: 700;
+}
+
 .inline {
   display: inline;
 }
@@ -188,6 +192,23 @@ nav ul,
 .home__welcome {
   margin: 50px auto 60px auto;
   text-align: center;
+}
+
+.loader {
+  content: "";
+  width: 50px;
+  height: 50px;
+  border: 10px solid transparent;
+  border-top-color: #0a3641;
+  border-radius: 50%;
+  animation: spinning 1s linear infinite;
+  padding: 0px !important;
+}
+
+@keyframes spinning {
+  to {
+    transform: rotate(1turn);
+  }
 }
 
 .breadcrumbs p {
