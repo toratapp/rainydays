@@ -4,6 +4,7 @@ const id = params.get("id");
 const url = "https://teidsvag.com/rainydays-cms/wp-json/wc/store/products/" + id;
 const h1 = document.querySelector("h1");
 const metaDescription = document.querySelector('meta[name="description"]').content;
+console.log(metaDescription);
 
 async function getProduct() {
     try {
@@ -11,7 +12,7 @@ async function getProduct() {
         const results = await response.json();
         console.log(results);
 
-        newArrivalsContainer.innerHTML = "";
+        // newArrivalsContainer.innerHTML = "";
 
         for(let i = 0; i < results.length; i++) {
 
@@ -24,14 +25,13 @@ async function getProduct() {
 
         document.title = `${productTitle} - Rainydays`;
         metaDescription = shortDescription;
-        console.log(metaDescription);
 
-        newArrivalsContainer.innerHTML += `<div class="product"><a href="jacket.html?id=${productId}"><img src="${featuredImage}" alt="${alt}" class="product-box-shadow"/></a><a href="jacket.html?id=${productId}" class="strong">${productTitle}</a><p>&#36;${price}</p>`;
+        // newArrivalsContainer.innerHTML += `<div class="product"><a href="jacket.html?id=${productId}"><img src="${featuredImage}" alt="${alt}" class="product-box-shadow"/></a><a href="jacket.html?id=${productId}" class="strong">${productTitle}</a><p>&#36;${price}</p>`;
         }
         }
     } catch(error) {
         console.warn(error);
-        return newArrivalsContainer.innerHTML = errorMessage("An error occured while fetching the products.");
+        // return newArrivalsContainer.innerHTML = errorMessage("An error occured while fetching the products.");
     }
 }
-// getProduct();
+getProduct();
