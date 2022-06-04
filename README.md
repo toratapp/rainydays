@@ -20,6 +20,10 @@ Rainydays is an online shop selling men's and women's rain jackets. Target audie
 Clone the repo, open in Visual Studio Code and run with Live Server. You can also deploy with [Netlify](https://www.netlify.com/).
 
 
+## Deployed site
+[Rainydays](https://rainydays-webshop.netlify.app)
+
+
 ## Contact
 You can contact me on my LinkedIn page:
 
