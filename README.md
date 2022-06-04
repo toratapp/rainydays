@@ -28,4 +28,5 @@ You can contact me on my LinkedIn page:
 
 ## Acknowledgments
 I read a lot of helpful learning material on [MDN Web Docs](https://developer.mozilla.org/en-US/) about forms, Flexbox and CSS Grids.
+
 All icons I have used are from [FontAwesome](https://fontawesome.com/).
