@@ -1,12 +1,13 @@
 # Rainydays - online shop for rain jackets
 
-![image](https://raw.githubusercontent.com/toratapp/teidsvag-portfolio/main/images/community-science-museum-home-web.jpg)
+![image](https://raw.githubusercontent.com/toratapp/teidsvag-portfolio/main/images/rainydays-home-web.jpg)
 
 Noroff school assignment, Front-end development. The assignment was to design and build a website for an online shop that sells rain jackets.
 
 
 ## Description
-Desc
+
+Noroff Front-end Development school project. Rainydays is an online shop selling men's and women's rain jackets. Target audience: men and women aged 30 to 50 whose interests are: being outdoors, hiking, exploring, skiing, camping and canoeing. The jackets are mid-range in price and emphasize durability and being suitable for a range of different weather types. In this assignment I learned how to make a headless WordPress site, use the WordPress REST API, fetch products I added on my headless WordPress site with WooCommerce and display them on my website. I also learned how to use CSS Grids and Flexbox.
 
 
 ## Built With
@@ -31,4 +32,5 @@ You can contact me on my LinkedIn page:
 
 ## Acknowledgments
 
-- Other icons by [Fontawesome](https://fontawesome.com/)
+I read a lot of helpful learning material on [MDN Web Docs](https://developer.mozilla.org/en-US/) about forms, Flexbox and CSS Grids.
+All icons I have used are from [FontAwesome](https://fontawesome.com/).
