@@ -13,7 +13,7 @@ Rainydays is an online shop selling men's and women's rain jackets. Target audie
 - HTML
 - CSS
 - JavaScript
-- Wordpress REST API
+- [Wordpress REST API](https://developer.wordpress.org/rest-api)
 
 
 ## Installing and running
