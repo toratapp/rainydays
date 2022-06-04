@@ -6,7 +6,7 @@ Noroff school assignment, Front-end development. The assignment was to design an
 
 
 ## Description
-Rainydays is an online shop selling men's and women's rain jackets. Target audience: men and women aged 30 to 50 whose interests are: being outdoors, hiking, exploring, skiing, camping and canoeing. The jackets are mid-range in price and emphasize durability and being suitable for a range of different weather types. In this assignment I learned how to make a headless WordPress site, use the WordPress REST API, fetch products I added on my headless WordPress site with WooCommerce and display them on my website. I also learned how to use CSS Grids and Flexbox.
+Rainydays is an online shop selling men's and women's rain jackets. Target audience: men and women aged 30 to 50 whose interests are: being outdoors, hiking, exploring, skiing, camping and canoeing. The jackets are mid-range in price and emphasize durability and being suitable for a range of different weather types. In this assignment I learned how use WordPress as a headless CMS, use the WordPress REST API, fetch products I added on my WordPress site with WooCommerce and display them on my website. I also learned how to use CSS Grids and Flexbox.
 
 
 ## Built With
